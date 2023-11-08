@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "test_yoshida"
+client_id = "caa8d35c972613390d7b00167e8c0d45"
+application_url = "https://array-contests-verification-almost.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://array-contests-verification-almost.trycloudflare.com/auth/callback",
+  "https://array-contests-verification-almost.trycloudflare.com/auth/shopify/callback",
+  "https://array-contests-verification-almost.trycloudflare.com/api/auth/callback",
+  "https://array-contests-verification-almost.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "warpjapan-plus-camp.myshopify.com"
